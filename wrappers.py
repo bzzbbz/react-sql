@@ -5,6 +5,10 @@ import numpy as np
 import re
 import string
 from collections import Counter
+from datasets import load_dataset
+import pandas as pd
+from sqlenv import SQLEnv
+from consts import *
 
     
 DATA_DIR = "data"
@@ -135,6 +139,73 @@ class HotPotQAWrapper(gym.Wrapper):
   
   def __len__(self):
     return len(self.data)
+  
+class WikiSQLWrapper(gym.Wrapper):
+  def __init__(self, env, indices):
+    super().__init__(env)
+    self.data = load_dataset("wikisql")["test"][indices]
+    self.data_idx = 0
+    # print(self.data[0])
+    self.dfs = {}
+    for data in self.data["table"]:
+      d = {}
+      for i, row in enumerate(data["rows"]):
+          d[str(i)] = row
+      
+      df = pd.DataFrame.from_dict(d, orient="index", columns=data["header"])
+      
+      for col, typ in zip(data["header"], data["types"]):
+          if typ == "real":
+              df[col] = pd.to_numeric(df[col].str.replace(',', ''), errors='coerce')
+      d[data["id"]] = df
+    
+  def reset(self, seed=None, return_info=False, options=None, idx=None):
+    try:
+      self.env.step('')
+    except:
+      pass
+    self.env.reset(seed=seed, return_info=return_info, options=options)
+    self.data_idx = 0 if idx is None else idx
+    observation = f"""\nHeader: "{self.data["table"][self.data_idx]["header"]}"\nQuery: "{self.data["question"][self.data_idx]}\""""
+    info = self._get_info()
+    return (observation, info) if return_info else observation
+
+  def _get_info(self):
+    return {
+      "steps": self.steps, 
+      "answer": self.answer,
+      "question": self.data["question"][self.data_idx], 
+    }
+
+  # def get_reward(self, info):
+  #   if info['answer'] is not None:
+  #     pred = normalize_answer(self.data[self.data_idx][1])
+  #     gt = normalize_answer(info['answer'])
+  #     score = (pred == gt)
+  #     return int(score)
+  #   return 0
+  
+  def get_metrics(self, info):
+    # if info['answer'] is not None:
+    #   pred = normalize_answer(self.data[self.data_idx][1])
+    #   gt = normalize_answer(info['answer'])
+    #   em = (pred == gt)
+    #   f1 = f1_score(pred, gt)[0]
+    #   return {'reward': em, 'em': em, 'f1': f1}
+    # return {'reward': 0, 'em': 0, 'f1': 0}
+    return 0
+
+  def step(self, action, df):
+    # TODO: first step obs does not have question. 
+    obs, _, done, info = self.env.step(action, df)
+    if done:
+      obs = f"Episode finished.\n"
+      # info.update({"gt_answer": self.data[self.data_idx], "question_idx": self.data_idx})
+      # info.update(self.get_metrics(info))
+    return obs, done, info
+  
+  def __len__(self):
+    return len(self.data)
 
 class FeverWrapper(gym.Wrapper):
   def __init__(self, env, split):
@@ -238,3 +309,9 @@ class LoggingWrapper(gym.Wrapper):
     
   def close(self):
     self.write()
+
+if __name__ == "__main__":
+  env = SQLEnv()
+  env = WikiSQLWrapper(env, indices=RANDOM_QUESTION_INDICES)
+  question = env.reset(idx=6)
+  print(question)
