@@ -1,62 +1,67 @@
-EXAMPLES = """
-EXAMPLE 1:
+EXAMPLE_REGULAR = """
+EXAMPLE {i}:
 Header: ['Player', 'No.', 'Nationality', 'Position', 'Years in Toronto', 'School/Club Team']
-Question: “What is terrence ross' nationality"
-Thought 1: I need to find the information related to terrence ross
-Act 1: query[“SELECT * FROM df WHERE [Player] = ‘Terrence Ross’”]
-Obs: 
+Question: [What is terrence ross' nationality]
+Thought 1: I need to find the information related to terrence ross.
+Action 1: sql[SELECT * FROM df WHERE UPPER([Player]) = UPPER("Terrence Ross")]
+Observation 1: 
 | Player        |   No. | Nationality   | Position   | Years in Toronto   | School/Club Team   |
 |:--------------|------:|:--------------|:-----------|:-------------------|:-------------------|
 | Terrence Ross |    31 | United States | Guard      | 2012-present       | Washington         |
 Thought 2: Now I need to find the information in the “Nationality” column of terrence ross
-Act 2: query[“SELECT [Nationality] FROM df WHERE [Player] = ‘Terrence Ross’”]
-Obs: 
+Action 2: sql[SELECT [Nationality] FROM df WHERE UPPER([Player]) = UPPER("Terrence Ross")]
+Observation 2: 
 | Nationality   |
 |:--------------|
 | United States |
 Thought 3: Finally, I need to get the information under Nationality and return the final answer.
-Act 3: finish["United States"]
+Action 3: finish[United States]
+"""
 
-EXAMPLE 2:
+EXAMPLE_AND = """
+EXAMPLE {i}:
 Header: ['Scheme', 'Tariff code', 'BTs retail price (regulated)', 'Approx premium', 'Prefixes']
-Query: "What prefixes are priced at pence per minute, fixed at all times with a premium of 3p/min?"
+Question: [What prefixes are priced at pence per minute, fixed at all times with a premium of 3p/min?]
 Thought 1: I need to find the rows in the table where the "Scheme" is "Pence per minute, fixed at all times," and the "Approx premium" is "3p/min."
-Act 1: query["SELECT * FROM df WHERE [Scheme] = 'Pence per minute, fixed at all times' AND [Approx premium] = '3p/min'"]
-Obs: 
+Action 1: sql[SELECT * FROM df WHERE UPPER([Scheme]) = UPPER("Pence per minute, fixed at all times") AND UPPER([Approx premium]) = UPPER("3p/min")]
+Observation 1: 
 | Scheme                               | Tariff code   | BTs retail price (regulated)   | Approx premium   | Prefixes   |
 |:-------------------------------------|:--------------|:-------------------------------|:-----------------|:-----------|
 | Pence per minute, fixed at all times | g27           | 1.277p/min                     | 3p/min           | 0843, 0844 |
 | Pence per minute, fixed at all times | g28           | 2.128p/min                     | 3p/min           | 0843, 0844 |
 Thought 2: Now I need to extract the "Prefixes" column from the rows that match the criteria.
-Act 2: query["SELECT [Prefixes] FROM df WHERE [Scheme] = 'Pence per minute, fixed at all times' AND [Approx premium] = '3p/min'"]
-Obs: 
+Action 2: sql[SELECT [Prefixes] FROM df WHERE [Scheme] = "Pence per minute, fixed at all times" AND [Approx premium] = "3p/min"]
+Observation 2: 
 | Prefixes   |
 |:-----------|
 | 0843, 0844 |
 | 0843, 0844 |
 Thought 3: Finally, I need to combine the prefixes from the selected rows and return the unique prefixes as the final answer.
-Act 3: finish["0843, 0844"]
+Action 3: finish[0843, 0844]
+"""
 
-EXAMPLE 3: 
+EXAMPLE_MAX = """
+EXAMPLE {i}: 
 Header: ['Year', 'Aircraft kilometers', 'Departures', 'Flying hours', 'Passengers', 'Seat factor', 'Employees', 'Profit/loss']
-Query: "Of the years that had exactly 17096 departures, what is the greatest number of aircraft kilometers flown?"
+Question: [Of the years that had exactly 17096 departures, what is the greatest number of aircraft kilometers flown?]
 Thought 1: I need to first find the years that had exactly 17096 departures
-Act 1: query[“SELECT * FROM df WHERE [Departures] = ‘17096’”]
-Obs:
+Action 1: sql[SELECT * FROM df WHERE [Departures] = "17096"]
+Observation 1:
 |   Year |   Aircraft kilometers |   Departures |   Flying hours |   Passengers | Seat factor   |   Employees | Profit/loss        |
 |-------:|----------------------:|-------------:|---------------:|-------------:|:--------------|------------:|:-------------------|
 |   2002 |              37767709 |        17096 |          55970 |      1339779 | 66%           |        3008 | Loss 3,044,000 JOD |
 Thought 2: Now I need to find the row that corresponds to the greatest number of aircraft kilometers flown. I’ll need to use MAX to do this.
-Act 2: query[“SELECT max([Aircraft kilometers]) FROM df WHERE [Departures] = ‘17096’”]
-Obs:
+Action 2: sql[SELECT max([Aircraft kilometers]) FROM df WHERE [Departures] = "17096"]
+Observation 2:
 |   max([Aircraft kilometers]) |
 |-----------------------------:|
 |                  3.77677e+07 |
 Thought 3: Finally, I need to return the Aircraft kilometers as the final answer.
-Act 3: finish[3.77677e+07]
-
-EXAMPLE 4:\
+Action 3: finish[3.77677e+07]
 """
+
+EXAMPLE_EMPTY = """
+EXAMPLE {i}:"""
 
 RANDOM_QUESTION_INDICES = [
     654,

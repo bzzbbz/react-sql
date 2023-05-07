@@ -90,8 +90,8 @@ class HotPotQAWrapper(gym.Wrapper):
     self.data_idx = 0
     self.split = split
 
-  def reset(self, seed=None, return_info=False, options=None, idx=None):
-    self.env.reset(seed=seed, return_info=return_info, options=options)
+  def reset(self, seed=None, return_info=False, options=None, idx=0):
+    self.env.reset(seed=seed, return_info=return_info, options=options, idx=idx)
     try:
       self.env.step('')
     except:
@@ -141,32 +141,17 @@ class HotPotQAWrapper(gym.Wrapper):
     return len(self.data)
   
 class WikiSQLWrapper(gym.Wrapper):
-  def __init__(self, env, indices):
+  def __init__(self, env):
     super().__init__(env)
-    self.data = load_dataset("wikisql")["test"][indices]
-    self.data_idx = 0
-    # print(self.data[0])
-    self.dfs = {}
-    for data in self.data["table"]:
-      d = {}
-      for i, row in enumerate(data["rows"]):
-          d[str(i)] = row
-      
-      df = pd.DataFrame.from_dict(d, orient="index", columns=data["header"])
-      
-      for col, typ in zip(data["header"], data["types"]):
-          if typ == "real":
-              df[col] = pd.to_numeric(df[col].str.replace(',', ''), errors='coerce')
-      d[data["id"]] = df
     
-  def reset(self, seed=None, return_info=False, options=None, idx=None):
+  def reset(self, seed=None, return_info=False, options=None, idx=0):
     try:
       self.env.step('')
     except:
       pass
-    self.env.reset(seed=seed, return_info=return_info, options=options)
+    self.env.reset(seed=seed, return_info=return_info, options=options, idx=idx)
     self.data_idx = 0 if idx is None else idx
-    observation = f"""\nHeader: "{self.data["table"][self.data_idx]["header"]}"\nQuery: "{self.data["question"][self.data_idx]}\""""
+    observation = f"""\nHeader: {self.env.data["table"][self.data_idx]["header"]}\nQuery: [{self.env.data["question"][self.data_idx]}]"""
     info = self._get_info()
     return (observation, info) if return_info else observation
 
@@ -177,13 +162,6 @@ class WikiSQLWrapper(gym.Wrapper):
       "question": self.data["question"][self.data_idx], 
     }
 
-  # def get_reward(self, info):
-  #   if info['answer'] is not None:
-  #     pred = normalize_answer(self.data[self.data_idx][1])
-  #     gt = normalize_answer(info['answer'])
-  #     score = (pred == gt)
-  #     return int(score)
-  #   return 0
   
   def get_metrics(self, info):
     # if info['answer'] is not None:
@@ -195,14 +173,14 @@ class WikiSQLWrapper(gym.Wrapper):
     # return {'reward': 0, 'em': 0, 'f1': 0}
     return 0
 
-  def step(self, action, df):
+  def step(self, action):
     # TODO: first step obs does not have question. 
-    obs, _, done, info = self.env.step(action, df)
+    obs, _, done, info = self.env.step(action)
     if done:
       obs = f"Episode finished.\n"
       # info.update({"gt_answer": self.data[self.data_idx], "question_idx": self.data_idx})
       # info.update(self.get_metrics(info))
-    return obs, done, info
+    return obs, 0, done, info
   
   def __len__(self):
     return len(self.data)
@@ -282,7 +260,7 @@ class LoggingWrapper(gym.Wrapper):
     return len(self.env.data)
   
 
-  def reset(self, seed=None, return_info=False, options=None, idx=None):
+  def reset(self, seed=None, return_info=False, options=None, idx=0):
     output = self.env.reset(seed=seed, return_info=return_info, options=options, idx=idx)
     observation = output[0] if return_info else output
     self.traj = {"observations": [observation], "actions": []}
@@ -309,9 +287,3 @@ class LoggingWrapper(gym.Wrapper):
     
   def close(self):
     self.write()
-
-if __name__ == "__main__":
-  env = SQLEnv()
-  env = WikiSQLWrapper(env, indices=RANDOM_QUESTION_INDICES)
-  question = env.reset(idx=6)
-  print(question)
