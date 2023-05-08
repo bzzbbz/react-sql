@@ -151,7 +151,7 @@ class WikiSQLWrapper(gym.Wrapper):
       pass
     self.env.reset(seed=seed, return_info=return_info, options=options, idx=idx)
     self.data_idx = 0 if idx is None else idx
-    observation = f"""\nHeader: {self.env.data["table"][self.data_idx]["header"]}\nQuery: [{self.env.data["question"][self.data_idx]}]"""
+    observation = f"""\nHeader: {self.env.data["table"][self.data_idx]["header"]}\nQuestion: [{self.env.data["question"][self.data_idx]}]"""
     info = self._get_info()
     return (observation, info) if return_info else observation
 

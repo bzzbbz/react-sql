@@ -16,7 +16,11 @@ class Query:
     def __init__(self, sel_index, agg_index, conditions=tuple(), ordered=False):
         self.sel_index = sel_index
         self.agg_index = agg_index
-        self.conditions = list(conditions)
+        if conditions["condition"]:
+            self.conditions = list(conditions.values())
+            self.conditions = [[c[0] for c in self.conditions]]
+        else:
+            self.conditions = []
         self.ordered = ordered
 
     def __eq__(self, other):

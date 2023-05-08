@@ -1,0 +1,541 @@
+
+"question": Who is the writer of the episode called "Ambush" (part 1)?
+"question_idx": 654
+"data_idx": 0
+"gt": corey evett & matt partney
+"pred": David Benioff and D.B. Weiss
+            
+"question": Name the most ceiling temperature for intermediate
+"question_idx": 1241
+"data_idx": 1
+"gt": 150°f / 66°c
+"pred": 105°C
+            
+"question": How many seasons took place in aspen, usa?
+"question_idx": 5014
+"data_idx": 2
+"gt": 1
+"pred": 3
+            
+"question": What's the score on february 18 when the visitors are the montreal canadiens?
+"question_idx": 7894
+"data_idx": 3
+"gt": 9–0
+"pred": 3
+            
+"question": What is Prize, when Winner is "John Shaw"?
+"question_idx": 9763
+"data_idx": 4
+"gt": £50,000
+"pred": $50,000
+            
+"question": Name the played with try bonus of 6 and drawn of 0
+"question_idx": 14396
+"data_idx": 5
+"gt": 22
+"pred": Club
+            
+"question": Which is the opponent when the record was 43-56?
+"question_idx": 14355
+"data_idx": 6
+"gt": yankees
+"pred": New York Knicks
+            
+"question": How many are on the administrative panel with an agricultural panel of fewer than 11 and an industrial and commercial panel of 3, with fewer than 4 on the labor panel?
+"question_idx": 7133
+"data_idx": 7
+"gt": 1.4
+"pred": 7
+            
+"question": Who was the opponent in the game held on February 4?
+"question_idx": 2737
+"data_idx": 8
+"gt": @ portland
+"pred": New York Knicks
+            
+"question": What is the largest Area (km²) for Deed number of 21352022 with a Population of more than 184?
+"question_idx": 5410
+"data_idx": 9
+"gt": 2.6
+"pred": 2.7
+            
+"question": Name the Record of Visitor of toronto st. pats with a Score of 5–4 and a Home of ottawa senators? Question 5
+"question_idx": 8402
+"data_idx": 10
+"gt": 2–0–0
+"pred": Win
+            
+"question": How many wins does the driver with 217 points have?
+"question_idx": 10036
+"data_idx": 11
+"gt": —
+"pred": 3
+            
+"question": What is the home team score when st kilda is the away team?
+"question_idx": 4671
+"data_idx": 12
+"gt": 10.11 (71)
+"pred": Unknown
+            
+"question": Who was the away team at the Football Park match?
+"question_idx": 8972
+"data_idx": 13
+"gt": geelong
+"pred": Adelaide Crows
+            
+"question": What is the lowest mintage in a year earlier than 2005?
+"question_idx": 10363
+"data_idx": 14
+"gt": None
+"pred": 3,000
+            
+"question": Which car won the same award in 2001 that the bmw m67d39 3.9l v8 e38 740d won in 1999?
+"question_idx": 15119
+"data_idx": 15
+"gt": bmw s54b32 3.2l m3
+"pred": Mercedes-Benz S-Class
+            
+"question": Which race was on the Las Vegas Motor Speedway for 2 hours?
+"question_idx": 12058
+"data_idx": 18
+"gt": sportscar grand prix
+"pred": None
+            
+"question": What is the Rank that has a Season of 1995/96?
+"question_idx": 8082
+"data_idx": 19
+"gt": 1
+"pred": 3
+            
+"question": Which name is on the of fc sète olympique de marseille?
+"question_idx": 8467
+"data_idx": 21
+"gt": boumediene abderahmane
+"pred": Jean-Pierre Papin
+            
+"question": I want the NHL team for wade belak
+"question_idx": 4428
+"data_idx": 22
+"gt": quebec nordiques
+"pred": Nashville Predators
+            
+"question": What is Busan's rank?
+"question_idx": 8819
+"data_idx": 23
+"gt": 28.0
+"pred": 2
+            
+"question": What is the latest year a ride opened that was manufactured by Zamperla, was a convoy ride, and had a name of Tiny Truckers?
+"question_idx": 15500
+"data_idx": 24
+"gt": 2001.0
+"pred": 2019
+            
+"question": what is the minimum highest position with artbeingt being paul evans
+"question_idx": 885
+"data_idx": 25
+"gt": 6.0
+"pred": 7
+            
+"question": What is the highest pick of the wr player with an overall less than 15?
+"question_idx": 8840
+"data_idx": 26
+"gt": 23.0
+"pred": 12
+            
+"question": What office is held by Electorate Hume?
+"question_idx": 6794
+"data_idx": 27
+"gt": 1998–2013
+"pred": Member of Parliament
+            
+"question": What teams drive cars manufactured by Toyota?
+"question_idx": 2081
+"data_idx": 28
+"gt": michael waltrip racing
+"pred": Toyota Gazoo Racing, Red Bull Racing
+            
+"question": On what day did the home team score 18.12 (120)?
+"question_idx": 4610
+"data_idx": 29
+"gt": 14 july 1951
+"pred": date unknown
+            
+"question": What was the record when Minnesota was the home team?
+"question_idx": 5050
+"data_idx": 31
+"gt": 12-3-2
+"pred": 7-2
+            
+"question": What is the crowd with Away team of hawthorn?
+"question_idx": 10229
+"data_idx": 32
+"gt": 17.0
+"pred": Unknown
+            
+"question": What is the average case burden with a cost per capita of $186, a Crime rate per 1,000 people of 117, and a Residents per officer larger than 736?
+"question_idx": 14432
+"data_idx": 33
+"gt": 108.0
+"pred": 1,845
+            
+"question": What is the current streak against TCU?
+"question_idx": 1318
+"data_idx": 34
+"gt": w 2
+"pred": Won 1
+            
+"question": What was the average year that Xuxa 3 earned the certification 2x platinum, and that the sales were higher than 750,000?
+"question_idx": 15217
+"data_idx": 36
+"gt": 1991.5
+"pred": 1993
+            
+"question": Who is the Head Coach of the team whose President is Mario Volarevic?
+"question_idx": 10476
+"data_idx": 37
+"gt": steve radoslavic
+"pred": Ivan Jovanovic
+            
+"question": Which home town was the high school Catholic University located in?
+"question_idx": 407
+"data_idx": 39
+"gt": baton rouge, la
+"pred": Washington, D.C.
+            
+"question": What is the total number of Races with a Pole that is larger than 0?
+"question_idx": 5425
+"data_idx": 40
+"gt": 1
+"pred": 7
+            
+"question": How many sources are there for south africa?
+"question_idx": 4210
+"data_idx": 41
+"gt": 1
+"pred": 3
+            
+"question": What attendance has Washington redskins as the opponent?
+"question_idx": 7419
+"data_idx": 42
+"gt": 23,909
+"pred": 78,675
+            
+"question": How many points did the home team score in the game that had the away team with a score of 13.18 (96)?
+"question_idx": 11732
+"data_idx": 43
+"gt": 13.11 (89)
+"pred": 96
+            
+"question": Which commander received complement larger than 240 , guns of 66 and ship of revolutie?
+"question_idx": 9924
+"data_idx": 44
+"gt": lucas
+"pred": Admiral Piet Heyn
+            
+"question": Which name has Years of 1–8, a Decile of 9, and a Roll smaller than 141?
+"question_idx": 15021
+"data_idx": 45
+"gt": ashburton borough school
+"pred": John
+            
+"question": what is the score on february 16?
+"question_idx": 8902
+"data_idx": 46
+"gt": 77–84
+"pred": No answer
+            
+"question": What is the Attendance with a Date that is november 25, 1965?
+"question_idx": 7460
+"data_idx": 47
+"gt": 27,473
+"pred": 25,845
+            
+"question": What is the highest attendance for December 3, 1972 after week 12?
+"question_idx": 13204
+"data_idx": 48
+"gt": 54,611
+"pred": 25,000
+            
+"question": How many people attended the game with a Tie no of 30?
+"question_idx": 11120
+"data_idx": 49
+"gt": 246
+"pred": 25,000
+            
+"question": WHAT IS TOTAL NUMBER OF PR TOP-UPS THAT HAVE A PERCENTAGE OF 0.8%, TOTAL LARGER THAN 1?
+"question_idx": 9992
+"data_idx": 50
+"gt": 3
+"pred": 0
+            
+"question": Name the sum of rank by average with competition finish more than 8 and average larger than 30
+"question_idx": 14336
+"data_idx": 51
+"gt": 55.0
+"pred": 45
+            
+"question": What was the catalog of the 7" single in France?
+"question_idx": 14468
+"data_idx": 52
+"gt": 887 847-7
+"pred": 7F 062-98765
+            
+"question": What is the height when col is 1,077 and prominence is more than 2,349?
+"question_idx": 8637
+"data_idx": 53
+"gt": None
+"pred": 3,845
+            
+"question": What league played in 2011?
+"question_idx": 15650
+"data_idx": 54
+"gt": usl pdl
+"pred": Major League Soccer
+            
+"question": Who won when the presenter was Tatiana Stefanidou?
+"question_idx": 15035
+"data_idx": 56
+"gt": nikos papadopoulos
+"pred": Unknown
+            
+"question": When was the game played at glenferrie oval?
+"question_idx": 10159
+"data_idx": 57
+"gt": 22 april 1946
+"pred": Unknown
+            
+"question": Tell me the horse with faults of 0 when the total is 4.1
+"question_idx": 12041
+"data_idx": 58
+"gt": authentic
+"pred": Lancaster
+            
+"question": What is the number of Position when the team was são paulo railway and the against is less than 46?
+"question_idx": 6910
+"data_idx": 59
+"gt": 1
+"pred": 2
+            
+"question": Who manufactured the vehicle withdrawn after 1932?
+"question_idx": 11797
+"data_idx": 60
+"gt": beyer, peacock & co.
+"pred": Unknown
+            
+"question": Name the number of series episode for s piston
+"question_idx": 1200
+"data_idx": 61
+"gt": 1
+"pred": 3
+            
+"question": What name is for the period 1945-1949 & 1953-1954 1949-1952?
+"question_idx": 8466
+"data_idx": 62
+"gt": boumediene abderahmane
+"pred": No name
+            
+"question": Name the played with losing bonus of 3 and points against of 426
+"question_idx": 6348
+"data_idx": 63
+"gt": 22
+"pred": Leinster
+            
+"question": Who did the Raptors play when their record was 45-36? 
+"question_idx": 844
+"data_idx": 64
+"gt": @ miami
+"pred": Unknown
+            
+"question": At what Location was the match Method TKO (punches)?
+"question_idx": 7308
+"data_idx": 65
+"gt": london , england
+"pred": Las Vegas, Nevada, USA
+            
+"question": How many total games were played by the team which had a total of 16 points and less than 4 draws?
+"question_idx": 14036
+"data_idx": 66
+"gt": 18.0
+"pred": 20
+            
+"question": What is the completed list entry number more than 1356460?
+"question_idx": 7190
+"data_idx": 67
+"gt": 1785
+"pred": 1356462
+            
+"question": What is the date of the Last Performance of Rarmian Newton as Billy Elliot?
+"question_idx": 14537
+"data_idx": 68
+"gt": 11 october 2008
+"pred": August 28, 2010
+            
+"question": How many no votes were there in the partial public funding of election campaigns legislation?
+"question_idx": 3367
+"data_idx": 69
+"gt": 659327.0
+"pred": 3
+            
+"question": What is the average attendance for the games after week 2 on September 23, 1973?
+"question_idx": 6542
+"data_idx": 70
+"gt": 50.0
+"pred": 25,000
+            
+"question": What was the lowest total of medals won by Croatia?
+"question_idx": 13276
+"data_idx": 71
+"gt": 4.0
+"pred": 2
+            
+"question": Who is the captain of Dave Jones' team?
+"question_idx": 3598
+"data_idx": 72
+"gt": craig bellamy
+"pred": Unknown
+            
+"question": How many average wins does bruce fleisher have?
+"question_idx": 10399
+"data_idx": 73
+"gt": 16.0
+"pred": 0
+            
+"question": What is the away team that features a home team of south melbourne?
+"question_idx": 4881
+"data_idx": 74
+"gt": 7.13 (55)
+"pred": Adelaide City
+            
+"question": Which home team has a crowd that is bigger than 22,449?
+"question_idx": 11009
+"data_idx": 75
+"gt": north melbourne
+"pred": No answer
+            
+"question": What was the record after the game against the Sharks?
+"question_idx": 14171
+"data_idx": 76
+"gt": 0–1–1
+"pred": 3-2
+            
+"question": When shaun maloney is the player what is the lowest p?
+"question_idx": 1838
+"data_idx": 77
+"gt": 6.0
+"pred": 1
+            
+"question": What year did the movie Rango come out?
+"question_idx": 14749
+"data_idx": 78
+"gt": 2012.0
+"pred": 2011
+            
+"question": What is the Frequency that is smaller than 100,000 Watts in guymon, oklahoma?
+"question_idx": 6159
+"data_idx": 79
+"gt": 90.7 fm
+"pred": 93.7
+            
+"question": What was the first season of the club that in 2012 was 2nd in Superettan?
+"question_idx": 122
+"data_idx": 80
+"gt": 2007
+"pred": 2005
+            
+"question": Position of 7th of 24, and a Goals smaller than 24 is what league?
+"question_idx": 15197
+"data_idx": 81
+"gt": football league division 4
+"pred": Premier League
+            
+"question": What is the result for california 2?
+"question_idx": 777
+"data_idx": 82
+"gt": re-elected
+"pred": Incumbent won
+            
+"question": What is Reserved Instruments, when Conduct of Litigation is Yes, and when Probate Activities is No?
+"question_idx": 7712
+"data_idx": 83
+"gt": yes
+"pred": No
+            
+"question": What is the least silver that has mexico as a nation and a gold less than 0?
+"question_idx": 14367
+"data_idx": 84
+"gt": 1.0
+"pred": 0
+            
+"question": How many points and bonuses did Kurt Busch get?
+"question_idx": 3950
+"data_idx": 85
+"gt": 147/5
+"pred": 0
+            
+"question": Name the vessel type for dof subsea
+"question_idx": 3491
+"data_idx": 86
+"gt": diving support vessel
+"pred": Subsea Support Vessel
+            
+"question": How many Pole Positions were there on 30 March?
+"question_idx": 3250
+"data_idx": 87
+"gt": 1
+"pred": 0
+            
+"question": What episode number has 2j5352 as a production code?
+"question_idx": 3106
+"data_idx": 89
+"gt": 5.0
+"pred": No. 8
+            
+"question": What is the average value of Bush# when the value for Others# is greater than 57, and the value for Bush% is 49.2%?
+"question_idx": 15721
+"data_idx": 90
+"gt": 21.666666666666668
+"pred": 68.5
+            
+"question": What college's team is the Saskatchewan Roughriders?
+"question_idx": 97
+"data_idx": 92
+"gt": regina
+"pred": University of Saskatchewan
+            
+"question": How many players had been drafted in front of Yves archambault
+"question_idx": 1102
+"data_idx": 93
+"gt": 110.0
+"pred": 7
+            
+"question": What is the Score with a Team with @ houston?
+"question_idx": 11861
+"data_idx": 94
+"gt": l 79–91 (ot)
+"pred": Unknown
+            
+"question": what is the average enrollment when the team nickname is wolverines and founded is after 1817?
+"question_idx": 9465
+"data_idx": 95
+"gt": 40.0
+"pred": 25,000
+            
+"question": Which Goal Difference has 28 Points, and a Club of cd cartagena, more than 15 losses?
+"question_idx": 12801
+"data_idx": 96
+"gt": -9.0
+"pred": -17
+            
+"question": How many different imports from Mercosur had a % of 18.0?
+"question_idx": 3452
+"data_idx": 97
+"gt": 1
+"pred": 3
+            
+"question": What is the largest number of points they had?
+"question_idx": 2873
+"data_idx": 99
+"gt": 89.0
+"pred": 127
+            
