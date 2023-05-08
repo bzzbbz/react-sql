@@ -29,3 +29,11 @@ Question: [How many television services are there where n° is greater than 856.
 Action 1: finish[2]
 Observation 1: none
 """
+
+EXAMPLE_AVG_S = """
+EXAMPLE {i}: 
+Header: ['Rank', 'Nation', 'Gold', 'Silver', 'Bronze', 'Total']
+Question: [Name the average bronze for total less than 3]
+Action 1: finish[0.714286]
+Observation 1: none
+"""

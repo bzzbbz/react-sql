@@ -33,3 +33,12 @@ Thought: Let's think step-by-step. Sender Neu Jerusalem and TRSP have n° greate
 Action 1: finish[2]
 Observation 1: none
 """
+
+EXAMPLE_AVG_T = """
+EXAMPLE {i}: 
+Header: ['Rank', 'Nation', 'Gold', 'Silver', 'Bronze', 'Total']
+Question: [Name the average bronze for total less than 3]
+Thought 1: Let's think step-by-step. There are six nations with less than 3 bronze. The average of them is 0.714286, so the answer is 0.714286.
+Action 1: finish[0.714286]
+Observation 1: none
+"""

@@ -8,7 +8,8 @@ if __name__ == "__main__":
     # dataset= load_dataset("wikisql")["test"]
     # data = dataset["table"][idx]
 
-    data = { "header": [ "N°", "Television service", "Country", "Language", "Content", "DAR", "HDTV", "Package/Option" ], "page_title": "Television in Italy", "page_id": "", "types": [ "real", "text", "text", "text", "text", "text", "text", "text" ], "id": "1-15887683-15", "section_title": "Religious", "caption": "Religious", "rows": [ [ "850", "Telepace", "Italy", "Italian", "religione", "16:9", "no", "no ( FTA )" ], [ "851", "Daystar Television Network", "Italy", "English", "religione", "4:3", "no", "no ( FTA )" ], [ "852", "Padre Pio TV", "Italy", "Italian", "religione", "4:3", "no", "no ( FTA )" ], [ "853", "The Word Network", "United Kingdom", "English", "religione", "4:3", "no", "no ( FTA )" ], [ "854", "Inspiration", "United Kingdom", "English", "religione", "4:3", "no", "no ( FTA )" ], [ "855", "EWTN", "United Kingdom", "English", "religione", "4:3", "no", "no ( FTA )" ], [ "856", "TBNE", "Italy", "Italian", "religione", "4:3", "no", "no ( FTA )" ], [ "857", "Sender Neu Jerusalem", "Germany", "German", "religione", "4:3", "no", "no ( FTA )" ], [ "858", "TRSP", "Italy", "Italian", "religione", "4:3", "no", "no ( FTA )" ] ], "name": "table_15887683_15" }
+    data = { "header": [ "Rank", "Nation", "Gold", "Silver", "Bronze", "Total" ], "page_title": "1986 Commonwealth Games", "page_id": "1006029", "types": [ "text", "text", "real", "real", "real", "real" ], "id": "2-1006029-1", "section_title": "Medals by country", "caption": "Medals by country", "rows": [ [ "1", "England", "52", "43", "49", "144" ], [ "2", "Canada", "51", "34", "31", "116" ], [ "3", "Australia", "40", "46", "35", "121" ], [ "4", "New Zealand", "8", "16", "14", "38" ], [ "5", "Wales", "6", "5", "12", "23" ], [ "6", "Scotland", "3", "12", "18", "33" ], [ "7", "Northern Ireland", "2", "4", "9", "15" ], [ "8", "Isle of Man", "1", "0", "0", "1" ], [ "9", "Guernsey", "0", "2", "0", "2" ], [ "10", "Swaziland", "0", "1", "0", "1" ], [ "11", "Hong Kong", "0", "0", "3", "3" ], [ "12", "Malawi", "0", "0", "2", "2" ], [ "13", "Botswana", "0", "0", "1", "1" ], [ "13", "Jersey", "0", "0", "1", "1" ], [ "13", "Singapore", "0", "0", "1", "1" ], [ "Total", "Total", "163", "163", "176", "502" ] ], "name": "" }
+
 
 
     d = {}
@@ -31,7 +32,7 @@ if __name__ == "__main__":
     # df = pysqldf(query)
     # print(pysqldf(query))
     print(data["header"])
-    query = """SELECT * FROM df WHERE [N°] > "856.0\""""
+    query = """SELECT * FROM df WHERE [Total] < "3\""""
     print(pysqldf(query).to_markdown(index=False))
     
 

@@ -18,7 +18,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--db_file", type=str, default="./data/test.db")
     parser.add_argument("--ordered", action="store_true")
-    parser.add_argument("--res_file", type=str, default="./results/results_standard_all_003.pkl")
+    parser.add_argument("--res_file", type=str, default="./results/results_react_no_simple_003.pkl")
     args = parser.parse_args()
     
     data = load_dataset("wikisql")["test"][RANDOM_QUESTION_INDICES]
@@ -40,6 +40,9 @@ if __name__ == "__main__":
             try:
                 mistake = abs(float(res) - float(p)) > 1e-5
             except:
+                mistake = True
+        elif res == "None" or res is None:
+            if str(p).strip().lower() not in {"", "none", "null", "<no answer>"}:
                 mistake = True
         else:
             mistake = str(p).lower().strip() != str(res).lower().strip()

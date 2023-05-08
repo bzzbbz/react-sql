@@ -81,6 +81,30 @@ Thought 3: Finally, I need to return the count of Television service as the fina
 Action 3: finish[2]
 """
 
+EXAMPLE_AVG = """
+EXAMPLE {i}: 
+Header: ['Rank', 'Nation', 'Gold', 'Silver', 'Bronze', 'Total']
+Question: [Name the average bronze for total less than 3]
+Thought 1: I need to first find the rows in the table where "Total" is less than 3.
+Action 1: sql[SELECT * FROM df WHERE [Total] < 3]
+Observation 1:
+|   Rank | Nation      |   Gold |   Silver |   Bronze |   Total |
+|-------:|:------------|-------:|---------:|---------:|--------:|
+|      8 | Isle of Man |      1 |        0 |        0 |       1 |
+|      9 | Guernsey    |      0 |        2 |        0 |       2 |
+|     10 | Swaziland   |      0 |        1 |        0 |       1 |
+|     12 | Malawi      |      0 |        0 |        2 |       2 |
+|     13 | Botswana    |      0 |        0 |        1 |       1 |
+Thought 2: Now I need to find the column that corresponds to Bronze. I’ll need to use AVG to get the average.
+Action 2: sql[SELECT AVG([Bronze]) FROM df WHERE [Total] < 3]
+Observation 2:
+|   AVG([Bronze]) |
+|----------------:|
+|        0.714286 |
+Thought 3: Finally, I need to return the average of Bronze as the final answer.
+Action 3: finish[0.714286]
+"""
+
 EXAMPLE_EMPTY = """
 EXAMPLE {i}:"""
 
