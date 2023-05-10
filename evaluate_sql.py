@@ -18,7 +18,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--db_file", type=str, default="./data/test.db")
     parser.add_argument("--ordered", action="store_true")
-    parser.add_argument("--res_file", type=str, default="./results/results_react_no_simple_003.pkl")
+    parser.add_argument("--res_file", type=str, default="./results/results_act_all_003.pkl")
     args = parser.parse_args()
     
     data = load_dataset("wikisql")["test"][RANDOM_QUESTION_INDICES]
@@ -64,10 +64,10 @@ if __name__ == "__main__":
             num_mistakes += 1
         i += 1
         
-    with open("mistakes.txt", 'w') as f:
+    with open("mistakes_act_act_003.txt", 'w') as f:
         f.write(mistakes_text)
 
-    with open("./results/correct_answers.pkl", 'wb') as f:
+    with open("./results/mistakes.pkl", 'wb') as f:
         pickle.dump(mistakes, f)
     
     print("accuracy: {acc}".format(acc=100 - num_mistakes))

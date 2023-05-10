@@ -24,17 +24,8 @@ if __name__ == "__main__":
     
     print(df)
     pysqldf = lambda q: sqldf(q, globals())
-    
-    # SELECT COUNT Tariff code FROM table WHERE BTs retail price (regulated) = 2p/min or inclusive"
-    # query = 'SELECT * FROM df WHERE [BTs retail price (regulated)] = "2p/min or inclusive"'
-    # df = pysqldf(query)
-    # query = 'SELECT [Tariff code] FROM df'
-    # df = pysqldf(query)
-    # print(pysqldf(query))
+
     print(data["header"])
     query = """SELECT * FROM df WHERE [Total] < "3\""""
     print(pysqldf(query).to_markdown(index=False))
-    
-
-    # print(df)
-    
+        

@@ -1,9 +1,12 @@
 {
     "654": {
-        "answer":"Corey Evett & Matt Partney" // didn't parse correctly
+        "answer":"Corey Evett & Matt Partney", // didn't parse correctly
+        "score": 0
     },
     "1241": {
-        "answer":"150°F / 66°C"
+        "answer":"150°F / 66°C",
+        "score": 
+
     },
     "5014": {
         "answer":"1"

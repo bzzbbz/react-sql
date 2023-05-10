@@ -1,0 +1,277 @@
+
+"question": Who is the writer of the episode called "Ambush" (part 1)?
+"question_idx": 654
+"data_idx": 0
+"gt": corey evett & matt partney
+"pred": J.J. Abrams
+            
+"question": Name the played with try bonus of 6 and drawn of 0
+"question_idx": 14396
+"data_idx": 5
+"gt": 22
+"pred": Aberavon Quins RFC
+            
+"question": How many are on the administrative panel with an agricultural panel of fewer than 11 and an industrial and commercial panel of 3, with fewer than 4 on the labor panel?
+"question_idx": 7133
+"data_idx": 7
+"gt": 1.4
+"pred": 8
+            
+"question": What is the largest Area (km²) for Deed number of 21352022 with a Population of more than 184?
+"question_idx": 5410
+"data_idx": 9
+"gt": 2.6
+"pred": No answer
+            
+"question": How many wins does the driver with 217 points have?
+"question_idx": 10036
+"data_idx": 11
+"gt": —
+"pred": 0
+            
+"question": What is the lowest mintage in a year earlier than 2005?
+"question_idx": 10363
+"data_idx": 14
+"gt": None
+"pred": 0
+            
+"question": Which car won the same award in 2001 that the bmw m67d39 3.9l v8 e38 740d won in 1999?
+"question_idx": 15119
+"data_idx": 15
+"gt": bmw s54b32 3.2l m3
+"pred": Audi A8
+            
+"question": Which race was on the Las Vegas Motor Speedway for 2 hours?
+"question_idx": 12058
+"data_idx": 18
+"gt": sportscar grand prix
+"pred": Indy
+            
+"question": What is the latest year a ride opened that was manufactured by Zamperla, was a convoy ride, and had a name of Tiny Truckers?
+"question_idx": 15500
+"data_idx": 24
+"gt": 2001.0
+"pred": 1994
+            
+"question": What is the highest pick of the wr player with an overall less than 15?
+"question_idx": 8840
+"data_idx": 26
+"gt": 23.0
+"pred": 
+            
+"question": Was the constitution amended with a 57.91% vote of yes?
+"question_idx": 3365
+"data_idx": 30
+"gt": yes
+"pred": No
+            
+"question": What is the crowd with Away team of hawthorn?
+"question_idx": 10229
+"data_idx": 32
+"gt": 17.0
+"pred": 17420
+            
+"question": What is the average case burden with a cost per capita of $186, a Crime rate per 1,000 people of 117, and a Residents per officer larger than 736?
+"question_idx": 14432
+"data_idx": 33
+"gt": 108.0
+"pred": No data available
+            
+"question": What was the average year that Xuxa 3 earned the certification 2x platinum, and that the sales were higher than 750,000?
+"question_idx": 15217
+"data_idx": 36
+"gt": 1991.5
+"pred": No answer
+            
+"question": What is the total number of Races with a Pole that is larger than 0?
+"question_idx": 5425
+"data_idx": 40
+"gt": 1
+"pred": 17
+            
+"question": Which commander received complement larger than 240 , guns of 66 and ship of revolutie?
+"question_idx": 9924
+"data_idx": 44
+"gt": lucas
+"pred": Rhynbende
+            
+"question": Which name has Years of 1–8, a Decile of 9, and a Roll smaller than 141?
+"question_idx": 15021
+"data_idx": 45
+"gt": ashburton borough school
+"pred": Dorie School, Lauriston School, Mayfield School
+            
+"question": What is the Attendance with a Date that is november 25, 1965?
+"question_idx": 7460
+"data_idx": 47
+"gt": 27,473
+"pred": 27473
+            
+"question": What is the highest attendance for December 3, 1972 after week 12?
+"question_idx": 13204
+"data_idx": 48
+"gt": 54,611
+"pred": null
+            
+"question": WHAT IS TOTAL NUMBER OF PR TOP-UPS THAT HAVE A PERCENTAGE OF 0.8%, TOTAL LARGER THAN 1?
+"question_idx": 9992
+"data_idx": 50
+"gt": 3
+"pred": 0
+            
+"question": Name the sum of rank by average with competition finish more than 8 and average larger than 30
+"question_idx": 14336
+"data_idx": 51
+"gt": 55.0
+"pred": trout
+            
+"question": What was the catalog of the 7" single in France?
+"question_idx": 14468
+"data_idx": 52
+"gt": 887 847-7
+"pred": 
+            
+"question": What is the height when col is 1,077 and prominence is more than 2,349?
+"question_idx": 8637
+"data_idx": 53
+"gt": None
+"pred": No answer
+            
+"question": When Travis Lee was picked, what was the highest pick?
+"question_idx": 13968
+"data_idx": 55
+"gt": 2.0
+"pred": 30
+            
+"question": Tell me the horse with faults of 0 when the total is 4.1
+"question_idx": 12041
+"data_idx": 58
+"gt": authentic
+"pred": BMC Up and Down
+            
+"question": What is the number of Position when the team was são paulo railway and the against is less than 46?
+"question_idx": 6910
+"data_idx": 59
+"gt": 1
+"pred": null
+            
+"question": Name the number of series episode for s piston
+"question_idx": 1200
+"data_idx": 61
+"gt": 1
+"pred": S1E2
+            
+"question": Name the played with losing bonus of 3 and points against of 426
+"question_idx": 6348
+"data_idx": 63
+"gt": 22
+"pred": Pontardawe RFC
+            
+"question": How many total games were played by the team which had a total of 16 points and less than 4 draws?
+"question_idx": 14036
+"data_idx": 66
+"gt": 18.0
+"pred": 0
+            
+"question": What is the completed list entry number more than 1356460?
+"question_idx": 7190
+"data_idx": 67
+"gt": 1785
+"pred": 1356461
+            
+"question": What is the date of the Last Performance of Rarmian Newton as Billy Elliot?
+"question_idx": 14537
+"data_idx": 68
+"gt": 11 october 2008
+"pred": 10/07/2011
+            
+"question": What is the average attendance for the games after week 2 on September 23, 1973?
+"question_idx": 6542
+"data_idx": 70
+"gt": 50.0
+"pred": 64147
+            
+"question": What is the away team that features a home team of south melbourne?
+"question_idx": 4881
+"data_idx": 74
+"gt": 7.13 (55)
+"pred": North Melbourne
+            
+"question": Which home team has a crowd that is bigger than 22,449?
+"question_idx": 11009
+"data_idx": 75
+"gt": north melbourne
+"pred": Richmond
+            
+"question": What is the Frequency that is smaller than 100,000 Watts in guymon, oklahoma?
+"question_idx": 6159
+"data_idx": 79
+"gt": 90.7 fm
+"pred": 91.3 FM
+            
+"question": What was the first season of the club that in 2012 was 2nd in Superettan?
+"question_idx": 122
+"data_idx": 80
+"gt": 2007
+"pred": 2009
+            
+"question": Position of 7th of 24, and a Goals smaller than 24 is what league?
+"question_idx": 15197
+"data_idx": 81
+"gt": football league division 4
+"pred": No League
+            
+"question": What is Reserved Instruments, when Conduct of Litigation is Yes, and when Probate Activities is No?
+"question_idx": 7712
+"data_idx": 83
+"gt": yes
+"pred": Yes, Yes, No
+            
+"question": What is the least silver that has mexico as a nation and a gold less than 0?
+"question_idx": 14367
+"data_idx": 84
+"gt": 1.0
+"pred": 0
+            
+"question": What episode number has 2j5352 as a production code?
+"question_idx": 3106
+"data_idx": 89
+"gt": 5.0
+"pred": 535
+            
+"question": What is the average value of Bush# when the value for Others# is greater than 57, and the value for Bush% is 49.2%?
+"question_idx": 15721
+"data_idx": 90
+"gt": 21.666666666666668
+"pred": 4312
+            
+"question": What hame has points larger than 81?
+"question_idx": 9421
+"data_idx": 91
+"gt": None
+"pred": Game 1, Game 2
+            
+"question": How many players had been drafted in front of Yves archambault
+"question_idx": 1102
+"data_idx": 93
+"gt": 110.0
+"pred": 13
+            
+"question": what is the average enrollment when the team nickname is wolverines and founded is after 1817?
+"question_idx": 9465
+"data_idx": 95
+"gt": 40.0
+"pred": null
+            
+"question": Which Goal Difference has 28 Points, and a Club of cd cartagena, more than 15 losses?
+"question_idx": 12801
+"data_idx": 96
+"gt": -9.0
+"pred": No results
+            
+"question": What is the country with a 70-74-69=213 score?
+"question_idx": 10104
+"data_idx": 98
+"gt": united states
+"pred": USA
+            
