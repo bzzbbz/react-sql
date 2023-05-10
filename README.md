@@ -1,4 +1,4 @@
-# ReAct Prompting
+# ReAct Prompting on WikiSQL
 
 GPT-3 prompting code for ICLR 2023 paper [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629).
 
