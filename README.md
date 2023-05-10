@@ -8,13 +8,15 @@ You need to first have an OpenAI API key and store it in the environment variabl
 Package requirement: ``openai``, and install ``alfworld`` following instructions [here](https://github.com/alfworld/alfworld).
 
 ## Experiments
-Run ``{hotpotqa,fever,alfworld,webshop}.ipynb``. As HotpotQA and FEVER have large validation sets, we only run 500 random examples (see notebooks). We find PaLM and GPT-3 are better at different tasks.
+Run ``wikisql.ipynb``. As WikiSQL have large test sets, we only run 100 random examples (see notebooks).
 
 
-|                    | HotpotQA (500 random dev, EM) | FEVER (500 random dev, EM) | AlfWorld (success rate) | WebShop  (success rate) |
-|--------------------|-------------------------------|----------------------------|-------------------------|-------------------------|
-| PaLM-540B (paper)  | 29.4                          | 62.2                       | 70.9                    | 40                      |
-| GPT-3 (davinci-002) | 30.4                          | 54                         | 78.4                    | 35.8                    |
+|                    | text-davinci-002 | text-davinci-003 |
+|--------------------|-------------------------------|----------------------------|
+| ReAct  | 0.14                         | 0.10                       |
+| Act-only | 0.08                          | 0.06                         |
+| Chain-of-thought | 0.56                          | 0.55                         |
+| Standard prompting | 0.58                         | 0.61                         |
 
 ## Citation
 
